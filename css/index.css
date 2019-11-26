@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    width: 700px;
+    height: 700px;
+    position: relative;
+    margin: 10px auto;
+}
+.btn{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.btn button{
+    background: none;
+    border: none;
+    outline: none;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.start-btn{
+    /*display: none;*/
+}
+.start-btn button{
+    width: 250px;
+    height: 200px;
+    background-image: url("../image/startGame.png");
+}
+.pause-btn{
+    display: none;
+}
+.pause-btn button{
+    width: 120px;
+    height: 100px;
+    background-image: url("../image/start.png");
+}
+.snake-wrapper{
+    width: 700px;
+    height: 700px;
+    box-sizing: border-box;
+    border: 20px solid dodgerblue;
+    background-color: cadetblue;
+    position: relative;
+}
+.snake-wrapper div{
+    position: absolute;
+}
+.snake-head{
+    background-image: url('../image/head.png');
+    background-size: cover;
+}
+.snake-body{
+    background-color: lightgreen;
+    border-radius: 50%;
+}
+.snake-food{
+    background-image: url('../image/food.png');
+    background-size: cover;
+}
+.left{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    border:1px solid black;
+    cursor: pointer;
+}
